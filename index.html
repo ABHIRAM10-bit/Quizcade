@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizcade</title>
+  <link rel="stylesheet" href="project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<audio id="music" loop>
+    <source src="theme1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button id="playBtn">▶</button>
+
+  <script>
+    const music = document.getElementById("music");
+    const playBtn = document.getElementById("playBtn");
+
+    playBtn.addEventListener("click", () => {
+      music.play();
+      playBtn.style.display = "none"; // hide after play
+    });
+  </script>
+
+  <h1 class="headline">CHOOSE YOUR QUIZ</h1>
+
+  <div class="categories">
+    <a href="gk.html" class="category">🧠 General Knowledge</a>
+    <a href="sports.html" class="category">🏅 Sports</a>
+    <a href="ca.html" class="category">🗞 Current Affairs</a>
+    <a href="geo.html" class="category">🌍 Geography</a>
+    <a href="mix.html" class="category">🎮 Mixed</a>
+  </div>
+</body>
+</html>
