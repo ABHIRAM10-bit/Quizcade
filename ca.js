@@ -72,7 +72,8 @@ const backgrounds = [
   "url('cop26.jpg')",
   "url('germany.jpg')",
   "url('climate.jpg')",
-  "url('canada.jpg')"
+  "url('canada.jpg')",
+  "url('cascore.jpg')"
 ];
 
 let currentQuestion = 0;
